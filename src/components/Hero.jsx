@@ -42,24 +42,28 @@ const Hero = () => {
                 <h1 className=' text-2xl text-pretty  font-medium'>Free Online AI Image Generator</h1>
                 <h4 className=' w-[80%] text-center  text-yellow-400 text-sm text-pretty hidden sm:block'>Dream it up, then add it to your design. Watch your words and phrases transform into beautiful images with the best AI image generators available at your fingertips. Stand out with an image perfect for your project.</h4>
                
-                <div className='flex justify-center items-center gap-5 m-4 '>
+                <div className='flex justify-center items-center gap-5 m-4 flex-col sm:flex-row '>
 
                     <input className=' rounded-lg outline text-black p-1 border' type="text"   value={inputText}
                         onChange={(e) => setInputText(e.target.value)} 
                         placeholder='Enter a prompt' />
-                    <button className='rounded-lg    p-2 bg-[#778da9]' onClick={generateImage}>Generate</button>
+                    
+                    <button className='rounded-lg    p-2 bg-[#778da9]' onClick={generateImage}>
+                        Generate
+                    </button>
+
                 </div>
             </div>
             
             <div className=' bg-white/10  sm:w-[50%] w-full  rounded-lg m-2 h-full flex items-center justify-center'>
                
                 {animate &&  <div className='flex justify-center items-center'><div className="spinner">
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
 </div></div> }
                 {image && <img src={image} alt="Generated" />}
              </div>
