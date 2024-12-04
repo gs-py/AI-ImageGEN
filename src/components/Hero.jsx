@@ -2,15 +2,16 @@ import React, { useState } from 'react'
 
 const Hero = () => {
     const [image, setImage] = useState(null); // State to store the image
-  
   const [inputText, setInputText] = useState(""); // State to store user input
     const [animate ,setanimate] = useState(false)
-  const query = async (data) => {
+    const query = async (data) => {
+        const apiKey = process.env.REACT_APP_HF_API_KEY
+        console.log(apiKey)
     const response = await fetch(
       "https://api-inference.huggingface.co/models/stabilityai/stable-diffusion-3.5-large",
       {
         headers: {
-          Authorization: "Bearer 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",
+          Authorization: `Bearer ${apiKey}`,
           "Content-Type": "application/json",
         },
         method: "POST",
@@ -52,7 +53,7 @@ const Hero = () => {
             
             <div className=' bg-white/10  sm:w-[50%] w-full  rounded-lg m-2 h-full flex items-center justify-center'>
                
-                {animate &&  <div className='flex justify-center items-center'><div class="spinner">
+                {animate &&  <div className='flex justify-center items-center'><div className="spinner">
 <div></div>
 <div></div>
 <div></div>
