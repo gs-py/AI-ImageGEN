@@ -1,8 +1,6 @@
 
 import './App.css'
-import Fast from './components/firstSection'
 import Hero from './components/Hero'
-import HuggingFaceImageGenerator from './components/Nav'
 function App() {
  
 
