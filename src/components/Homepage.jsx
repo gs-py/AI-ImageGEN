@@ -11,7 +11,7 @@ const Homepage = () => {
     navigate('/text-summarise')
   }
   return (
-   <section className=" h-[100dvh] flex justify-center items-center transition-all duration-1000 bg-[url('3d-render-modern-background-with-flowing-cyber-dots-design.jpg')] bg-cover">
+   <section className=" h-[100dvh] flex justify-center items-center transition-all duration-1000 bg-[url('/3d-render-modern-background-with-flowing-cyber-dots-design.jpg')] bg-cover">
      
           <div className=" h-[90vh] m-2 scroll-smooth  w-[100vw]  container  rounded-lg overflow-x-clip overflow-y-hidden p-2 text-white  flex justify-center items-center flex-col ">
             
