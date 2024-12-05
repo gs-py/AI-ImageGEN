@@ -11,27 +11,27 @@ const Homepage = () => {
     navigate('/text-summarise')
   }
   return (
-   <section className=" h-[100dvh] flex justify-center items-center transition-all duration-1000 bg-[#4335A7]">
+   <section className=" h-[100dvh] flex justify-center items-center transition-all duration-1000 bg-[url('3d-render-modern-background-with-flowing-cyber-dots-design.jpg')] bg-cover">
      
-          <div className=" h-[90vh] m-2 scroll-smooth  w-[100vw]  container bg-[#FFF6E9] rounded-lg overflow-x-clip overflow-y-hidden p-2 text-white  flex justify-center items-center flex-col ">
+          <div className=" h-[90vh] m-2 scroll-smooth  w-[100vw]  container  rounded-lg overflow-x-clip overflow-y-hidden p-2 text-white  flex justify-center items-center flex-col ">
             
               <div className=" text-[#FF7F3E] w-full flex justify-center">Hlo GUys</div>
               
               <div className=" flex  justify-center items-center flex-nowrap gap-3">
                   
-                  <div className=" w-[40dvw] bg-[#80C4E9] rounded-lg h-[35dvh] flex justify-evenly flex-col  gap-2 p-2  flex-nowrap text-pretty items-stretch hover:scale-95 transition-all duration-400 anima ">
+                  <div className=" w-[40dvw] bg-[#80C4E9]/30 rounded-lg h-[35dvh] flex justify-evenly flex-col  gap-2 p-2  flex-nowrap  text-pretty items-stretch hover:scale-95 transition-all duration-400 anima  ">
                       
-                      <h4 className=" flex flex-nowrap gap-3 items-center">  <FaWandMagicSparkles className="text-violet-500 text-pretty text-center" />Image Generator</h4>
-                      <p>Transforms Your ideas into stunning visuals with our AI-powered image generation tool</p>
-                      <p className=" flex  items-center flex-nowrap gap-2 text-violet-700 underline cursor-pointer w-fit" onClick={handleClick}>Try Now <FaArrowRight   className=" tra"/></p>
+                      <h4 className=" flex flex-nowrap gap-3 items-center">  <FaWandMagicSparkles className="text-violet-500 sm:text-pretty text-center text-nowrap" />Image Generator</h4>
+                      <p className="sm:block hidden">Transforms Your ideas into stunning visuals with our AI-powered image generation tool</p>
+                      <p className=" flex  items-center flex-nowrap gap-2 underline cursor-pointer w-fit" onClick={handleClick}>Try Now <FaArrowRight   className=" tra"/></p>
                   </div>
                  
-                  <div className=" w-[40dvw] bg-[#80C4E9] rounded-lg h-[35dvh] flex justify-evenly flex-col gap-2 p-2 items-stretch hover:scale-95 transition-all duration-400  anima"> 
+                  <div className=" w-[40dvw] bg-[#80C4E9]/30 rounded-lg h-[35dvh] flex justify-evenly flex-col gap-2 p-2 items-stretch hover:scale-95 transition-all duration-400  anima"> 
                       <h4 className=" flex flex-nowrap gap-3 items-center "><FaFileContract className=" text-violet-500" />
                           Text Summariser
                       </h4>
-                      <p>Instantly condense lenghty content into clear , concise summaires</p>
-                      <p className=" flex  items-center flex-nowrap gap-2 text-violet-700  underline cursor-pointer w-fit"  onClick={handleText}>Try Now <FaArrowRight  className=" tra"/></p>
+                      <p className="sm:block hidden">Instantly condense lenghty content into clear , concise summaires</p>
+                      <p className=" flex  items-center flex-nowrap gap-2  underline cursor-pointer w-fit"  onClick={handleText}>Try Now <FaArrowRight  className=" tra"/></p>
                   </div>
 
                 </div>
