@@ -109,3 +109,20 @@ button {
     transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);
   }
 }
+.anima:hover .tra {
+  /* transform: translateX(10px); */
+  transition: all;
+  transition-duration: 1000ms;
+  animation: linkAnimation 3s ease-in-out infinite;
+}
+@keyframes linkAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px); /* Move down 10px */
+  }
+  100% {
+    transform: translateX(0); /* Return to original position */
+  }
+}

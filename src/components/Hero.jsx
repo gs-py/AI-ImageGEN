@@ -40,7 +40,7 @@ const Hero = () => {
       setImage(imageUrl);
       setTimeout(() => {
       setIsDisabled(false);
-    }, 8000);
+    }, 4000);
       // Update the state with the image URL
   };
 

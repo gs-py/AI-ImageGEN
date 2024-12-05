@@ -1,16 +1,23 @@
 
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import './App.css'
 import Hero from './components/Hero'
+import Home from './components/Home';
+import Homepage from './components/Homepage';
+import TextSummariser from './components/TextSummariser';
 function App() {
  
 
   return (
-    
-     <section className=" h-[100dvh] flex justify-center items-center transition-all duration-1000 bg-[url('/smoke-376543_1920.jpg')]">
-      <div className=" h-[90vh] m-2 scroll-smooth  w-[100vw]  containe rounded-lg overflow-x-clip overflow-y-hidden p-2 bg-white/5 text-white  ">
-        <Hero />
-        </div>
-      </section>
+     <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Homepage />} />
+        <Route path='/Image-gen' element={<Home />} />
+        <Route path='/text-summarise' element={<TextSummariser />} />
+        </Routes>
+      
+      </BrowserRouter>
+   
    
   )
 }
