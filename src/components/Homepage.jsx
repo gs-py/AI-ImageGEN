@@ -26,7 +26,7 @@ const Homepage = () => {
                       <p className=" flex  items-center flex-nowrap gap-2 underline cursor-pointer w-fit" onClick={handleClick}>Try Now <FaArrowRight   className=" tra"/></p>
                   </div>
                  
-                  <div className=" w-[35dvw] sm:w-[30dvw] bg-[#80C4E9]/30 rounded-lg sm:h-[35dvh] h-[25dvh] flow flex justify-evenly flex-col gap-2 p-4 min-h-fit  items-stretch hover:scale-95 transition-all duration-400  anima"> 
+                  <div className=" w-[35dvw] sm:w-[30dvw] bg-[#80C4E9]/20 rounded-lg sm:h-[35dvh] h-[25dvh] flow flex justify-evenly flex-col gap-2 p-4 min-h-fit  items-stretch hover:scale-95 transition-all duration-400  anima"> 
                       <h4 className=" flex flex-nowrap gap-3 items-center "><FaFileContract className=" text-violet-500" />
                           Text Summariser
                       </h4>
