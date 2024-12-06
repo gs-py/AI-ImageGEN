@@ -17,16 +17,16 @@ const Homepage = () => {
             
               <div className=" text-[#FF7F3E] w-full flex justify-center">Hlo GUys</div>
               
-              <div className=" flex  justify-center items-center flex-nowrap gap-3">
+              <div className=" flex  justify-evenly  w-full items-center flex-nowrap gap-5 ">
                   
-                  <div className=" w-[40dvw] bg-[#80C4E9]/30 rounded-lg h-[35dvh] flex justify-evenly flex-col  gap-2 p-2  flex-nowrap  text-pretty items-stretch hover:scale-95 transition-all duration-400 anima  ">
+                  <div className=" w-[35dvw] sm:w-[30dvw] bg-[#80C4E9]/20  rounded-lg sm:h-[35dvh] h-[25dvh] flex justify-evenly flex-col  gap-2 p-4 flow1 flex-nowrap  text-pretty items-stretch hover:scale-95 transition-all duration-400 anima  min-h-fit ">
                       
-                      <h4 className=" flex flex-nowrap gap-3 items-center">  <FaWandMagicSparkles className="text-violet-500 sm:text-pretty text-center text-nowrap" />Image Generator</h4>
+                      <h4 className=" flex flex-nowrap gap-3 items-center">  <FaWandMagicSparkles className="text-violet-500 sm:text-pretty   text-center text-nowrap" />Image Generator</h4>
                       <p className="sm:block hidden">Transforms Your ideas into stunning visuals with our AI-powered image generation tool</p>
                       <p className=" flex  items-center flex-nowrap gap-2 underline cursor-pointer w-fit" onClick={handleClick}>Try Now <FaArrowRight   className=" tra"/></p>
                   </div>
                  
-                  <div className=" w-[40dvw] bg-[#80C4E9]/30 rounded-lg h-[35dvh] flex justify-evenly flex-col gap-2 p-2 items-stretch hover:scale-95 transition-all duration-400  anima"> 
+                  <div className=" w-[35dvw] sm:w-[30dvw] bg-[#80C4E9]/30 rounded-lg sm:h-[35dvh] h-[25dvh] flow flex justify-evenly flex-col gap-2 p-4 min-h-fit  items-stretch hover:scale-95 transition-all duration-400  anima"> 
                       <h4 className=" flex flex-nowrap gap-3 items-center "><FaFileContract className=" text-violet-500" />
                           Text Summariser
                       </h4>

@@ -3,17 +3,21 @@
   box-sizing: border-box;
   @apply font-jetbrains;
 }
+
 @keyframes view {
 }
+
 .view {
   display: flex;
 }
+
 .block {
   width: 500px;
   display: flex;
   background-color: aqua;
   height: 40vh;
 }
+
 /* From Uiverse.io by Spacious74 */
 button {
   font-size: 1.4em;
@@ -49,9 +53,11 @@ button {
   background: linear-gradient(90deg, #03a9f4, #f441a5);
   filter: blur(1.2em);
 }
+
 .container2:active::before {
   filter: blur(0.2em);
 }
+
 /* From Uiverse.io by AqFox */
 .spinner {
   width: 44px;
@@ -109,20 +115,81 @@ button {
     transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);
   }
 }
+
 .anima:hover .tra {
   /* transform: translateX(10px); */
   transition: all;
   transition-duration: 1000ms;
   animation: linkAnimation 3s ease-in-out infinite;
 }
+
 @keyframes linkAnimation {
   0% {
     transform: translateX(0);
   }
+
   50% {
-    transform: translateX(10px); /* Move down 10px */
+    transform: translateX(10px);
+    /* Move down 10px */
   }
+
   100% {
-    transform: translateX(0); /* Return to original position */
+    transform: translateX(0);
+    /* Return to original position */
+  }
+}
+
+.flow {
+  transition: all;
+  transition-duration: 110ms;
+  animation: flowanima 10s ease-in-out infinite;
+}
+
+@keyframes flowanima {
+  0% {
+    transform: translateY(-5px);
+  }
+
+  25% {
+    transform: translateX(5px);
+  }
+
+  50% {
+    transform: translateY(5px);
+  }
+
+  75% {
+    transform: translateX(-5px);
+  }
+
+  100% {
+    transform: translateY(-5px);
+  }
+}
+
+.flow1 {
+  animation-delay: 200ms;
+  animation: flowanima1 10s ease-in-out infinite;
+}
+
+@keyframes flowanima1 {
+  0% {
+    transform: translateY(5px);
+  }
+
+  25% {
+    transform: translateX(-5px);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
+
+  75% {
+    transform: translateX(5px);
+  }
+
+  100% {
+    transform: translateY(5px);
   }
 }

@@ -5,6 +5,9 @@ import dotenv from "dotenv";
 dotenv.config();
 export default defineConfig({
   plugins: [react()],
+  server: {
+    host: "0.0.0.0",
+  },
   define: {
     "process.env": process.env, // Optional for global compatibility
   },
